@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat anda mendapatkan uang tunai senilai 100jt</title>
+    <style>
+        body {
+            background-color: #ffc0cb;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20%;
+            font-size: 3em;
+            color: #ff6b6b;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        button {
+            padding: 15px 30px;
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff3b3b;
+        }
+        #button-avoid {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>kaki masih sehat kan sasss?</h1>
+    <p>hari sabtu atau minggu jalan nonton?????????</p>
+    <button onclick="alert('nah gitu dong iyain, cape kan ngejar tombol engga??!')">gas</button>
+    <button id="button-avoid">GA MAU MALES PENGEN BELI TRUK</button>
+
+    <script>
+        const buttonAvoid = document.getElementById('button-avoid');
+
+        buttonAvoid.onmouseover = function() {
+            const x = Math.floor(Math.random() * (window.innerWidth - this.clientWidth));
+            const y = Math.floor(Math.random() * (window.innerHeight - this.clientHeight));
+            this.style.left = x + 'px';
+            this.style.top = y + 'px';
+        };
+    </script>
+</body>
+</html>
+
