@@ -1,61 +1,84 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat anda mendapatkan uang tunai senilai 100jt</title>
+    <title>Online Shop</title>
     <style>
         body {
-            background-color: #ffc0cb;
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
-        h1 {
-            margin-top: 20%;
-            font-size: 3em;
-            color: #ff6b6b;
-        }
-        p {
-            font-size: 1.5em;
-            margin: 20px 0;
-        }
-        button {
-            padding: 15px 30px;
-            background-color: #ff6b6b;
+        header {
+            background-color: #333;
             color: #fff;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            padding: 10px;
+            text-align: center;
         }
-        button:hover {
-            background-color: #ff3b3b;
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
         }
-        #button-avoid {
-            position: absolute;
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-name {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .product-price {
+            color: #333;
+            margin: 5px 0;
+        }
+        .buy-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>kaki masih sehat kan sasss?</h1>
-    <p>hari sabtu atau minggu jalan nonton?????????</p>
-    <button onclick="alert('nah gitu dong iyain, cape kan ngejar tombol engga??!')">gas</button>
-    <button id="button-avoid">GA MAU MALES PENGEN BELI TRUK</button>
 
-    <script>
-        const buttonAvoid = document.getElementById('button-avoid');
+<header>
+    <h1>Welcome to Our Online Shop</h1>
+</header>
 
-        buttonAvoid.onmouseover = function() {
-            const x = Math.floor(Math.random() * (window.innerWidth - this.clientWidth));
-            const y = Math.floor(Math.random() * (window.innerHeight - this.clientHeight));
-            this.style.left = x + 'px';
-            this.style.top = y + 'px';
-        };
-    </script>
+<div class="product-container">
+    <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="product-name">Product 1</div>
+        <div class="product-price">Rp100.000</div>
+        <a href="#" class="buy-button">Beli</a>
+    </div>
+    <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-name">Product 2</div>
+        <div class="product-price">Rp150.000</div>
+        <a href="#" class="buy-button">Beli</a>
+    </div>
+    <div class="product">
+        <img src="product3.jpg" alt="Product 3">
+        <div class="product-name">Product 3</div>
+        <div class="product-price">Rp200.000</div>
+        <a href="#" class="buy-button">Beli</a>
+    </div>
+</div>
+
 </body>
 </html>
-
